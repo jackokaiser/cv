@@ -1,0 +1,72 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+% \setlength{\hintscolumnwidth}{2.3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jacques}{KAISER}
+\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{1 rue du Hohwald}{67550 Vendenheim}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 78 47 39 39}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jacko.kaiser@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.jacqueskaiser.com}                         % optional, remove
+
+\begin{document}
+
+
+\recipient{Company Recruitment team}{
+Constraint Technologies\\Level 7, 224 Queen Street\\Melbourne VIC 3000\\Australia}
+\date{October 03, 2013}
+\opening{Dear Constraint Technologies}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}
+
+\makelettertitle
+
+This letter is to express my interest in the OpenGL Developer position posted on seek.
+
+Since I discovered Computer Graphics, I'm a 3D enthusiast.
+
+During my internship at Skimlab, I've implemented a GPU raytracer of implicit surfaces. As OpenGL (and so WebGL) isn't meant to be used in this way,
+I almost had to code an entire rendering pipeline. This improved a lot my skills of writing shaders and GLSL code.
+As WebGL is based on OpenGL ES 2.0, itself being a subset of OpenGL 3+,
+I confronted to some limitations such as an unique render target.
+
+I've used OpenGL in more conventional manner during my other internships at the iCube laboratory.
+On top of learning standard Computer Graphics algorithms such as space partitioning,
+I've worked hand to hand with CGoGN, a complex C++ template library providing mesh abstraction.
+Moreover, I've read Effective C++ by Scott Meyers in order to improve my C++ knowledge even more.
+
+Furthermore, I'm familiar with the Unix environment and command line.
+Relying on gcc and makefiles for the compilation; I often use gdb in combination to GNU Binutils for the debug.
+For scripting languages, I master both bash and python.
+Additionally, I also know my way around Emacs-lisp in order to customize my text editor.
+
+I look forward to discussing this position with you in more detail. Thank you for your consideration.
+
+\makeletterclosing
+
+
+\end{document}

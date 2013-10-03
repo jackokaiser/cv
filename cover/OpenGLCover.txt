@@ -1,0 +1,25 @@
+This letter is to express my interest in the OpenGL Developer position posted on seek.
+
+Since I discovered Computer Graphics, I'm a 3D enthusiast.
+
+During my internship at Skimlab, I've implemented a GPU raytracer of implicit surfaces. As OpenGL (and so WebGL) isn't meant to be used in this way,
+I almost had to code an entire rendering pipeline. This improved a lot my skills of writing shaders and GLSL code.
+As WebGL is based on OpenGL ES 2.0, itself being a subset of OpenGL 3+,
+I confronted to some limitations such as an unique render target.
+
+I've used OpenGL in more conventional manner during my other internships at the iCube laboratory.
+On top of learning standard Computer Graphics algorithms such as space partitioning,
+I've worked hand to hand with CGoGN, a complex C++ template library providing mesh abstraction.
+Moreover, I've read Effective C++ by Scott Meyers in order to improve my C++ knowledge even more.
+
+Furthermore, I'm familiar with the Unix environment and command line.
+Relying on gcc and makefiles for the compilation; I often use gdb in combination to GNU Binutils for the debug.
+For scripting languages, I master both bash and python.
+Additionally, I also know my way around Emacs-lisp in order to customize my text editor.
+
+I look forward to discussing this position with you in more detail. Thank you for your consideration.
+
+Sincerely,
+
+Jacques KAISER
+
