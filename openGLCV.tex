@@ -1,0 +1,206 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+% \setlength{\hintscolumnwidth}{2.3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jacques}{KAISER}
+\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{1 rue du Hohwald}{67550 Vendenheim}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 78 47 39 39}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jacko.kaiser@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.jacqueskaiser.com}                         % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Graduated Computer Scientist, under a \textbf{Working Holiday Visa}, applying for an \textbf{OpenGL Developer} position}
+% \quote{Developper under a \textbf{Working Holiday Visa}, applying for a fixed-term contract}
+% optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+\begin{document}
+% \begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%   -----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2013}{MSc. Computer Graphics with Honors}{Strasbourg University}{France}{}{Computer science and science of images.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2012}{BSc. Computer Science with Honors}{Strasbourg University}{France}{}{Third year abroad in \textbf{Durham University}, England.}
+
+
+\section{Experiences}
+\subsection{Vocational}
+\cventry{June--Oct. 2013}{JavaScript/WebGL Developer}{Skimlab}{Strasbourg}{}{
+  Skimlab is a brand new startup. The business model is to provide an easy online tool for modeling 3D printable objects.
+  \newline{}%
+  The application is often referred as a ZSphere clone, because it relies on implicit surfaces in order to keep the user away from editing the mesh geometry directly.
+  \newline{}%
+  My work there was to build a raytracer to improve the rendering quality, which was a complicated task due to the experimental status of \textbf{WebGL} itself. It involved a good knowledge of \textbf{WebGL}, THREE.js and the \textbf{graphic pipeline} in general.
+  \newline{}%
+  Amongst added features:%
+  \begin{itemize}%
+  \item Set of shaders that emulate the materials we can print;
+  \item Environment mapping;
+  \item Point cloud render mode;
+  \item Raytracer render mode;
+  \item High quality image rendering (CPU Raytracing, for compatibility).
+  \end{itemize}
+  \newline{}
+  You can try the application on \textit{www.skimlab.com}.
+}
+\cventry{2012}{Individual tutor}{Compl\'etude}{Strasbourg}{}{
+  Individual tutoring of mathematics for scientific high school students.
+  I've been tutoring two students during one year, teaching them for around 3h a week each.}
+\cventry{June--Aug. 2012}{Research intern/C++}{iCube}{Strasbourg}{}{
+  Development of an application for \textbf{mesh deformation} on a stereoscopic virtual reality platform. In order to be real-time, it has been built upon \textbf{CGoGN}, a powerful library that provides an efficient
+  implementation of combinatorial maps, maintained by the iCube laboratory. The application worked through a \textbf{3D cursor}, the avatar of the user.\newline{}
+ The application supports:
+ \begin{itemize}
+ \item Selection of objects of different natures:
+   \begin{itemize}
+   \item Vertices;
+   \item Edges;
+   \item Faces;
+   \item Volumes;
+   \end{itemize}
+ \item Moving selected objects;
+ \item Moving a set of geometrically close objects (neighbors in space);
+ \item Moving a set of topologically close objects (neighbors on the mesh);
+ \item Local subdivision of the mesh (inherited from combinatorial map definition).
+ \end{itemize}
+  Developing on a virtual reality platform also added constraints such as screens synchronization and non-standard input methods.}
+\cventry{June--Aug. 2011}{Research intern/C++}{iCube}{Strasbourg}{}{
+  Customizing interactive 3D cursors in order to solve positioning issue in virtual environments, which has been used in the mesh deformation app.
+  \newline{}
+  The positioning issue refers to the fact that, despite the improvements of 3D technologies, it remains hard to guess relative depth of objects in space.
+  \newline{}
+  I implemented solutions where the cursor gives hints on its position by scaling and orienting itself toward the closest object in space. We tried out many different shapes and updating methods, and we performed \textbf{statistical tests} to provide a formal proof of the improvement over standard cursors.
+}
+
+\subsection{Personal projects}
+\cventry{July--Nov 2013}{Created my own website}{www.jacqueskaiser.com}{}{}{
+  Personal website that hosts few of my projects, and a more in depth description of myself. I relied on common startup technologies, such as node.js, heroku and \textbf{twitter bootstrap}.\newline{}
+  As a work in progress, it is updated regularly.
+}
+\cventry{June--Sept. 2013}{Startup Engineering class}{Coursera}{}{}{
+  This class taught me the basics of creating and scaling a startup, along with the market research, and get me familiar with \textbf{industry best practices}.
+  \newline{}
+  As I was working at Skimlab in the meantime, I had the opportunity to instantaneously put into practice what I was learning.}
+\cventry{May--June 2013}{Web Development class}{Udacity}{}{}{
+  This class helped me to understand how the web works under the hood, down to basic HTTP requests.
+  \newline{}
+  Even when relying on high level abstraction offered by technologies such as google app engine, it may reveal significant to understand the big picture in order to track down bugs.}
+\cventry{Jan.--March 2012}{Introduction to Parallel Programming class}{Udacity}{}{}{
+  This class was about the fundamentals of parallel computing with the GPU and the CUDA programming environment.
+  \newline{}
+  It taught me how to use the GPU chip for general computations along with common parallel algorithms. Since, I'm able to identify whether an algorithm could have a huge performance gain by being redesigned and shipped to the GPU.}
+% \subsection{Books}
+% \cventry{2013}{CoffeeScript: Accelerated JavaScript Development}{Trevor Burnham}{}{}{}
+% \cventry{2013}{JavaScript: The Good Parts}{Douglas Crockford}{}{}{}
+% \cventry{2013}{WebGL: Up and Running}{Tony Parisi}{}{}{}
+% \cventry{2012}{Effective C++, Third Edition: 55 Specific Ways to Improve Your Programs and Designs}{Scott Meyers}{}{}{}
+\subsection{Special achievements}
+\cventry{2011}{Finalist on a coding contest}{Prologin}{Paris}{}{
+  French national Computer Science contest, where contestants have two days to develop an artificial intelligence for a made up game. Contestants are then ranked with respect to the score of their program when they fight against other contestant's ones.}
+\cventry{2009}{Animation Capacity Diploma}{BAFA}{France}{}{
+  This French diploma allows to work as a facilitator and watch after kids and teenagers. I worked in two different activity centers, for a total time of one month. Managing up to 14 kids by myself improved my authority.}
+
+\section{Languages}
+\cvitemwithcomment{\textbf{French}}{Mother tongue}{Born in Strasbourg}
+\cvitemwithcomment{\textbf{English}}{Fluent}{Lived one year in Durham, England}
+
+\section{Computer skills}
+\cvdoubleitem{\textbf{Startup}}{JavaScript, CoffeeScript, Python}{\textbf{Web}}{Node.js, JQuery, Angular.js}
+\cvdoubleitem{\textbf{Programming}}{C, C++, Assembly}{\textbf{GPU}}{OpenGL, WebGL, glsl, Cuda}
+\cvdoubleitem{\textbf{Environment}}{Unix, Bash, Emacs}{\textbf{VCS}}{Git, Mercurial, Subversion}
+\cvdoubleitem{\textbf{Softwares}}{Blender, Unity, Gimp}{}{}
+
+\section{Interests}
+\cvdoubleitem{\textbf{Juggling}}{Up to four balls}{\textbf{Tricking}}{Taught me to exceed my limits}
+\cvdoubleitem{\textbf{Ukulele}}{Easy access to the music world}{\textbf{Slacklining}}{Enhanced my balance and focus}
+\cvdoubleitem{\textbf{Ultimate}}{Good for team play}{\textbf{Dancing}}{Improved leading skills}
+\cvdoubleitem{\textbf{Woofing}}{Lived one month in Scotland}{\textbf{Rollerskating}}{Involved in a community}
+
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\cventry{}{Maxime Quiblier}{max@skimlab.com}{}{}{Trainee's supervisor, CEO at Skimlab.}
+\cventry{}{Jérôme Grosjean}{grosjean@unistra.fr}{}{}{Trainee's supervisor, lecturer and researcher at the iCube laboratory.}
+\cventry{}{Basile Sauvage}{sauvage@unistra.fr}{}{}{Lecturer and researcher at the iCube laborary.}
+
+
+% Publications from a BibTeX file without multibib
+% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+% to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+% \section{Publications}
+% \nocitebook{book1,book2}
+% \bibliographystylebook{plain}
+% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+% \nocitemisc{misc1,misc2,misc3}
+% \bibliographystylemisc{plain}
+% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+% -----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+
+%\makeletterclosing
+
+% \clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
