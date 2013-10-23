@@ -26,8 +26,8 @@
 % personal data
 \name{Jacques}{KAISER}
 \title{Resumé}                               % optional, remove / comment the line if not wanted
-\address{Level 6, 228 Flinders Lane}{Melbourne, Victoria}{Australia 3000}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{0490 159 046}                   % optional, remove / comment the line if not wanted
+\address{1 rue du Hohwald}{67550 Vendenheim}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 78 47 39 39}                   % optional, remove / comment the line if not wanted
 % \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 % \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{jacko.kaiser@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -39,32 +39,37 @@
 \recipient{Company Recruitment team}{
 Constraint Technologies\\Level 7, 224 Queen Street\\Melbourne VIC 3000\\Australia}
 \date{October 03, 2013}
-\opening{Dear Constraint Technologies}
+\opening{Dear Zendesk}
 \closing{Yours faithfully,}
 \enclosure[Attached]{curriculum vit\ae{}}
 
 \makelettertitle
 
-This letter is to express my interest in the OpenGL Developer position posted on seek.
+This letter is to express my interest in the JavaScript Developer position posted on seek.
 
-Since I discovered Computer Graphics, I'm a 3D enthusiast.
+Recently graduated with a Master of Computer Science, I am an enthusiastic developer.
 
-During my internship at Skimlab, I've implemented a GPU raytracer of implicit surfaces. As OpenGL (and so WebGL) isn't meant to be used in this way,
-I almost had to code an entire rendering pipeline. This improved a lot my skills of writing shaders and GLSL code.
-As WebGL is based on OpenGL ES 2.0, itself being a subset of OpenGL 3+,
-I confronted to some limitations such as an unique render target.
+% Amazing Developer :
+%% research lab => independance, problem solving, creativity and initiatives
+%% Skimlab => startup skills, web, independant
+%% MOOC => different way of learning, open minds
+Far more that just being an assiduous student, I have always seized opportunities to my advantage.
+Example of this includes all the relevant internships I have made during every summer holidays.
+Working in environment lying from research lab to start up made me a versatile and independent programmer.
 
-I've used OpenGL in more conventional manner during my other internships at the iCube laboratory.
-On top of learning standard Computer Graphics algorithms such as space partitioning,
-I've worked hand to hand with CGoGN, a complex C++ template library providing mesh abstraction.
-Moreover, I've read Effective C++ by Scott Meyers in order to improve my C++ knowledge even more.
+% New to web programming, but quick learner and devoted
+Even though I started web programming quite recently, my initiatives made me learn it quickly.
+Seduced by the ease to write portable applications, I have spent the last 12 months gathering as many web experiences as possible.
+The most relevant one has been my internship at Skimlab, where I had the opportunity to raise a powerful web application
+relying on new technologies and industry best practices. More details on my experiences are available on www.jacqueskaiser.com;
+and being itself a project, you can browse the source code on github.
 
-Furthermore, I'm familiar with the Unix environment and command line.
-Relying on gcc and makefiles for the compilation; I often use gdb in combination to GNU Binutils for the debug.
-For scripting languages, I master both bash and python.
-Additionally, I also know my way around Emacs-lisp in order to customize my text editor.
+% I care about high quality code, and people for who I work are satisfied. Look at my references
+As you will see from my references and from my website, if I have the opportunity to join your company
+you will gain an autonomous, open-minded and very efficient programmer.
+From my side, I am eager to improve my proficiency by working in depth with cutting edges technologies.
 
-I look forward to discussing this position with you in more detail. Thank you for your consideration.
+I am very excited to learn more about this opportunity and share how I will be a great fit for Zendesk.
 
 \makeletterclosing
 
