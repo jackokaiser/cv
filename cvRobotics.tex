@@ -27,16 +27,22 @@
 % \setlength{\hintscolumnwidth}{2.3cm}                % if you want to change the width of the column with the dates
 % \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+\usepackage[backend=bibtex,bibstyle=ieee,citestyle=numeric-comp,
+  minbibnames=2,maxbibnames=2,mincitenames=2,maxcitenames=2,
+  doi=false,url=false,isbn=false]{biblatex}
+\bibliography{publications}
+
+
 % personal data
 \name{Jacques}{KAISER}
 \title{Resumé}                               % optional, remove / comment the line if not wanted
-\address{Kloserstr. 38,}{Karlsruhe 76137}{Germany}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{}{Karlsruhe, Germany}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+49 721 9654-392}                   % optional, remove / comment the line if not wanted
 % \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 % \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{jkaiser@fzi.de}                               % optional, remove / comment the line if not wanted
 \homepage{www.jacqueskaiser.com}                         % optional, remove / comment the line if not wanted
-\extrainfo{French}                 % optional, remove / comment the line if not wanted
+\extrainfo{French, 27 years old}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %% \quote{Graduated Computer Scientist, under a \textbf{Working Holiday Visa}, applying for a \textbf{Front-End Developer} position}
 % \quote{Developper under a \textbf{Working Holiday Visa}, applying for a fixed-term contract}
@@ -62,16 +68,16 @@
 \vspace{-1pt}
 
 \section{Education}
-\cventry{2015--Present}{PhD candidate}{Human Brain Project}{Karlsruhe}{}{Learning action from event-based vision with spiking neural networks.}
-\cventry{2014--2015}{Master 2 MoSIG {\normalfont (Grade of 14.789/20)}}{ENSIMAG \& IM2AG}{Grenoble, France}{}{Graphics, Vision and Robotics.}
+\cventry{2015--Present}{PhD in Neurorobotics}{Human Brain Project}{Karlsruhe}{}{Learning action from event-based vision with spiking neural networks.}
+\cventry{2014--2015}{Master 2 MoSIG}{ENSIMAG \& IM2AG}{Grenoble, France}{}{International degree in Graphics, Vision and Robotics.}
 \cventry{2012--2013}{Master 1}{Strasbourg University}{France}{}{Computer science and science of images.}  % arguments 3 to 6 can be left empty
-\cventry{2009--2012}{BSc. Computer Science {\normalfont (Grade of 14.9/20)}}{Strasbourg University}{France}{}{3\textsuperscript{rd} year Erasmus in \textbf{Durham University}, England.}
-\cventry{2009}{Baccalauréat {\normalfont (Grade of 13,73/20)}}{Lycée Kleber}{Strasbourg, France}{}{}
+\cventry{2009--2012}{BSc. Computer Science}{Strasbourg University}{France}{}{3\textsuperscript{rd} year Erasmus in \textbf{Durham University}, England.}
+%% \cventry{2009}{Baccalauréat {\normalfont (Grade of 13,73/20)}}{Lycée Kleber}{Strasbourg, France}{}{}
 
 
 \section{Vocational Experience}
-\cventry{Aug.--Present 2015}{Research Assistant}{FZI Forschungszentrum Informatik}{Karlsruhe}{ISPE}{
-  Involved in various projects for vision, web and robotics components.
+\cventry{Aug.--Present 2015}{Research Scientist}{FZI Forschungszentrum Informatik}{Karlsruhe}{ISPE}{
+  Involved in various robotics projects for solving vision tasks and implementing web interfaces.
 }
 \cventry{Feb.--July 2015}{Master Thesis in Sensor Fusion}{INRIA}{Grenoble}{e-Motion}{
   Evaluation of a closed-form solution solving the visual-inertial structure from motion problem.
@@ -82,7 +88,7 @@
 }
 \cventry{June--Oct. 2013}{JavaScript/WebGL Developer}{Skimlab}{Strasbourg}{skimlab.com}{
   Skimlab provides an online 3D modeling tool based on implicit surfaces for 3D printing.
-  Working on the rendering pipeline, I developed shaders for environment mapping, point cloud rendering, raytracing.
+  Working on the rendering pipeline, I developed shaders for environment mapping, point cloud rendering and raytracing.
 }
 \cventry{2012--2013}{Individual tutor in mathematics for high school students}{Compl\'etude}{}{}{}
 \cventry{June--Aug. 2012}{Research intern in Computer Graphics}{iCube}{Strasbourg}{IGG}{
@@ -93,30 +99,32 @@ Development of an application for deforming mesh on a virtual reality platform.}
 \section{Languages}
 \cvitemwithcomment{\textbf{French}}{Mother tongue}{Born in Strasbourg}
 \cvitemwithcomment{\textbf{English}}{Fluent}{Lived in England and Australia}
-\cvitemwithcomment{\textbf{German}}{B2}{Currently learning}
+\cvitemwithcomment{\textbf{German}}{B2}{Handle day-to-day conversation}
 
+\section{Technical Skills}
+\cvlistdoubleitem{Python}{C++}
+\cvlistdoubleitem{Javascript}{Angularjs}
+\cvlistdoubleitem{PyTorch}{ROS}
+\cvlistdoubleitem{Linux}{OpenCV}
 
-%% \section{Publications}
-%% \cventry{1\textsuperscript{st} author 2016}{Towards a framework for end-to-end control of a simulated vehicle with spiking neural networks}{IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)}{}{}{}
-%% \cventry{2016}{Connecting artificial brains to robots in a comprehensive simulation framework: the Neurorobotics Platform}{Frontiers in Neurorobotics}{}{}{}
-%% \cventry{2016}{Retina Color-Opponency Based Pursuit Implemented Through Spiking Neural Networks in the Neurorobotics Platform}{Biomimetic and Biohybrid Systems}{}{}{}
-%% \cventry{1\textsuperscript{st} author 2016}{Simultaneous State Initialization and Gyroscope Bias Calibration in Visual Inertial Aided Navigation}{IEEE Robotics and Automation Letters (RA-L)}{}{}{}
+\vspace{1pt}
 
-\section{Extracurricular activities}
+\section{Extracurricular Activities}
 \cvdoubleitem{\textbf{Juggling}}{Coordination}{\textbf{Slacklining}}{Balance and focus}
 \cvdoubleitem{\textbf{Ultimate}}{Team play}{\textbf{Woofing}}{Travel and discover new cultures}
 \cvdoubleitem{\textbf{Ukulele}}{Easy access to the music world}{\textbf{Dancing}}{Improved leading skills}
-\cvdoubleitem{\textbf{Rollerskating}}{Founding member of the\\ Association Des Sports Extr\^emes De Vendenheim (ASEV)}{\textbf{Volunteering}}{Volunteer at the RACV\\ Great Victorian Bike Ride 2013, Australia}
-\cvdoubleitem{\textbf{Public Science}}{Presented\\ Spiking Neural Networks\\ at Karlsruhe AI Meetup Group}{\textbf{Public Science}}{Presented\\ Neurorobotics \\ at Pint of Science, Strasbourg}
-
-
-
-
-
+\cvitem{\textbf{Rollerskating}}{Founding member of the Association Des Sports Extr\^emes de Vendenheim (ASEV)}
+\cvitem{\textbf{Volunteering}}{Volunteer at the RACV Great Victorian Bike Ride 2013, Australia}
+\cvitem{\textbf{OpenScience}}{
+  \begin{itemize}
+  \item Presented Spiking Neural Networks at Karlsruhe AI Meetup Group 2017.
+  \item Presented Neurorobotics at Pint of Science 2018, Strasbourg
+  \end{itemize}
+}
 
 % \section{Extra 1}
-% \cvlistitem{Item 1}
-% \cvlistitem{Item 2}
+%% \cvlistitem{Item 1}
+%% \cvlistitem{Item 2}
 % \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
 
 % \section{Extra 2}
@@ -128,23 +136,25 @@ Development of an application for deforming mesh on a virtual reality platform.}
 %% \cventry{}{Maxime Quiblier}{max@skimlab.com}{}{}{Trainee's supervisor, CEO at Skimlab.}
 %% \cventry{}{Jérôme Grosjean}{grosjean@unistra.fr}{}{}{Trainee's supervisor, lecturer and researcher at the iCube laboratory.}
 %% \cventry{}{Basile Sauvage}{sauvage@unistra.fr}{}{}{Lecturer and researcher at the iCube laborary.}
-
+\vfill{}
+%% \vspace{4pt}
 
 % Publications from a BibTeX file without multibib
-% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-% to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-% \nocite{*}
-% \bibliographystyle{plain}
-% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+\renewcommand{\refname}{First-authored Publications}
+\nocite{*}
+\printbibliography
+%% \bibliographystyle{plain}
+%% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
-% \section{Publications}
-% \nocitebook{book1,book2}
-% \bibliographystylebook{plain}
-% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-% \nocitemisc{misc1,misc2,misc3}
-% \bibliographystylemisc{plain}
-% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%% \section{Publications}
+%% \nocitebook{book1,book2}
+%% \bibliographystylebook{plain}
+%% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%% \nocitemisc{misc1,misc2,misc3}
+%% \bibliographystylemisc{plain}
+%% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
 \clearpage
 % -----       letter       ---------------------------------------------------------
