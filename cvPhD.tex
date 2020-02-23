@@ -1,0 +1,174 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0,0.451,0.282}% fzigreen
+\definecolor{color2}{rgb}{0.002,0.196,0.128}% dark grey
+
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+% \setlength{\hintscolumnwidth}{2.3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[backend=bibtex,bibstyle=ieee,citestyle=numeric-comp,
+  minbibnames=2,maxbibnames=2,mincitenames=2,maxcitenames=2,
+  doi=false,url=false,isbn=false]{biblatex}
+\bibliography{publications}
+
+
+% personal data
+\name{Jacques}{KAISER}
+\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{}{Karlsruhe, Germany}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49 721 9654-392}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jkaiser@fzi.de}                               % optional, remove / comment the line if not wanted
+\homepage{www.jacqueskaiser.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{French, 29 years old}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%% \quote{Graduated Computer Scientist, under a \textbf{Working Holiday Visa}, applying for a \textbf{Front-End Developer} position}
+% \quote{Developper under a \textbf{Working Holiday Visa}, applying for a fixed-term contract}
+% optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+\begin{document}
+% \begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%   -----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-1pt}
+
+\section{Education}
+\cventry{Summer 2018}{Research Visit}{University of California, Irvine (UCI)}{United States of America}{}{Three months visit to Prof. Emre Neftci funded by FITweltweit DAAD travel grant.}
+\cventry{2015--2020}{PhD student}{Karlsruher Institut für Technologie (KIT)}{Germany}{}{Synaptic Learning for Neuromorphic Vision funded by the Human Brain Project.}
+\cventry{2014--2015}{Master 2}{Universit\'e Grenoble Alpes}{France}{}{International MoSIG degree in Graphics, Vision and Robotics.}
+\cventry{2012--2013}{Master 1}{Universit\'e de Strasbourg}{France}{}{Computer science and science of images.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2012}{BSc. Computer Science}{Universit\'e de Strasbourg}{France}{}{3\textsuperscript{rd} year Erasmus in \textbf{Durham University}, England.}
+%% \cventry{2009}{Baccalauréat {\normalfont (Grade of 13,73/20)}}{Lycée Kleber}{Strasbourg, France}{}{}
+
+
+\section{Vocational Experience}
+\cventry{2015--Present}{Research Scientist}{FZI Forschungszentrum Informatik}{Karlsruhe}{ISPE}{
+  Developing robot behaviors, vision algorithms and web interfaces for various projects.
+}
+\cventry{Feb.--July 2015}{Master Thesis in Sensor Fusion}{INRIA}{Grenoble}{e-Motion}{
+  Evaluation of a closed-form solution solving the visual-inertial structure from motion problem.
+}
+\cventry{Feb.--July 2014}{Full-Stack Web Developer}{Shwish}{Melbourne, Australia}{}{
+  Development of an online gifting platform from scratch using the MEAN stack.
+}
+\cventry{June--Oct. 2013}{JavaScript/WebGL Developer}{Skimlab}{Strasbourg}{skimlab.com}{
+  Development of WebGL shaders for environment mapping and raytracing.
+}
+\cventry{2012--2013}{Individual tutor in mathematics for high school students}{Compl\'etude}{}{}{}
+\cventry{June--Aug. 2012}{Research intern in Computer Graphics}{iCube}{Strasbourg}{IGG}{
+Development of an application for deforming mesh on a virtual reality platform.}
+\cventry{June--Aug. 2011}{Research intern in Computer Graphics}{iCube}{Strasbourg}{IGG}{
+  Interactive 3D cursor to ease the perception of depth in virtual reality applications.}
+
+\section{Languages}
+\cvitemwithcomment{\textbf{French}}{Mother tongue}{Born in Strasbourg}
+\cvitemwithcomment{\textbf{English}}{Fluent}{Lived in England and Australia}
+\cvitemwithcomment{\textbf{German}}{B2}{Handle day-to-day conversation}
+
+\section{Technical Skills}
+\cvlistdoubleitem{Python}{C++}
+\cvlistdoubleitem{Javascript}{Angularjs}
+\cvlistdoubleitem{PyTorch}{ROS}
+\cvlistdoubleitem{Linux}{OpenCV}
+
+\vspace{1pt}
+
+\section{Extracurricular Activities}
+\cvdoubleitem{\textbf{Juggling}}{Coordination}{\textbf{Snowboard}}{Creative risk-taking}
+\cvdoubleitem{\textbf{Woofing}}{Travel and discover new cultures}{\textbf{Ukulele}}{Easy access to the music world}
+\cvitem{\textbf{Rollerskating}}{Founding member of the Association Des Sports Extr\^emes de Vendenheim (ASEV)}
+\cvitem{\textbf{Volunteering}}{Volunteer at the RACV Great Victorian Bike Ride 2013, Australia}
+\cvitem{\textbf{OpenScience}}{
+  \begin{itemize}
+  \item Presented Spiking Neural Networks at Karlsruhe AI Meetup Group 2017.
+  \item Presented Neurorobotics at Pint of Science 2018, Strasbourg
+  \end{itemize}
+}
+
+% \section{Extra 1}
+%% \cvlistitem{Item 1}
+%% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%% \section{References}
+%% \cventry{}{Maxime Quiblier}{max@skimlab.com}{}{}{Trainee's supervisor, CEO at Skimlab.}
+%% \cventry{}{Jérôme Grosjean}{grosjean@unistra.fr}{}{}{Trainee's supervisor, lecturer and researcher at the iCube laboratory.}
+%% \cventry{}{Basile Sauvage}{sauvage@unistra.fr}{}{}{Lecturer and researcher at the iCube laborary.}
+\vfill{}
+%% \vspace{4pt}
+
+% Publications from a BibTeX file without multibib
+%% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+\renewcommand{\refname}{First-authored Publications}
+\nocite{*}
+\printbibliography
+%% \bibliographystyle{plain}
+%% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%% \section{Publications}
+%% \nocitebook{book1,book2}
+%% \bibliographystylebook{plain}
+%% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%% \nocitemisc{misc1,misc2,misc3}
+%% \bibliographystylemisc{plain}
+%% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+% -----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+
+%\makeletterclosing
+
+% \clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
