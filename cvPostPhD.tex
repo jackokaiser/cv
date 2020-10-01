@@ -1,0 +1,173 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0,0.451,0.282}% fzigreen
+\definecolor{color2}{rgb}{0.002,0.196,0.128}% dark grey
+
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+% \setlength{\hintscolumnwidth}{2.3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[backend=bibtex,bibstyle=ieee,citestyle=numeric-comp,
+  minbibnames=2,maxbibnames=2,mincitenames=2,maxcitenames=2,
+  doi=false,url=false,isbn=false]{biblatex}
+\bibliography{publications}
+
+
+% personal data
+\name{Jacques}{KAISER}
+\title{Ph.D.}                               % optional, remove / comment the line if not wanted
+\address{}{Vendenheim, France}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 78 47 39 39}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jacko.kaiser@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.jacqueskaiser.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{French, 29 years old}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%% \quote{Graduated Computer Scientist, under a \textbf{Working Holiday Visa}, applying for a \textbf{Front-End Developer} position}
+% \quote{Developper under a \textbf{Working Holiday Visa}, applying for a fixed-term contract}
+% optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+\begin{document}
+% \begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%   -----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-1pt}
+
+\section{Expériences professionnelles}
+\cventry{2015--2020}{Ingénieur informatique}{FZI Forschungszentrum Informatik}{Karlsruhe}{ISPE}{
+  Développement d'algorithmes de perception et control pour des projets de robotique.
+}
+\cventry{Fév.--Juil. 2015}{Thèse de master en fusion de données capteurs}{INRIA}{Grenoble}{e-Motion}{
+  \'Evaluation d'une solution de forme fermée pour fusionner des données visuo-inertielles.
+}
+\cventry{Fév.--Juil. 2014}{Développeur JavaScript full-stack}{Shwish}{Melbourne, Australia}{}{
+  Développement d'une platforme de social network spécialisée dans les idées de cadeaux.
+}
+\cventry{Juin--Oct. 2013}{Développeur JavaScript/WebGL}{Skimlab}{Strasbourg}{capsulesketch.org}{
+  Développement de shaders pour raytracing sur GPU dans le navigateur.
+}
+\cventry{2012--2013}{Tuteur individuel en mathématique pour lycéens}{Compl\'etude}{}{}{}
+\cventry{Juin--Août 2012}{Stage de recherche en infographie}{iCube}{Strasbourg}{IGG}{
+  Développement d'une application pour déformer des meshs en réalité virtuelle.}
+\cventry{Juin--Août 2011}{Stage de recherche en infographie}{iCube}{Strasbourg}{IGG}{
+  Développement d'un curseur 3D interactif facilitant la perception de la profondeur.}
+
+\section{\'Education}
+\cventry{2015--2020}{Ph.D.}{Karlsruher Institut für Technologie (KIT)}{Allemagne}{}{Thèse en machine learning, vision et robotique, financée par le Human Brain Project.}
+\cventry{2014--2015}{Master 2}{Universit\'e Grenoble Alpes}{France}{}{Diplôme international MoSIG en vision, robotique et infographie.}
+\cventry{2012--2013}{Master 1}{Universit\'e de Strasbourg}{France}{}{Informatique et science de l'image.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2012}{Licence informatique}{Universit\'e de Strasbourg}{France}{}{3\textsuperscript{ème} année Erasmus à Durham University, Angleterre.}
+%% \cventry{2009}{Baccalauréat {\normalfont (Grade of 13,73/20)}}{Lycée Kleber}{Strasbourg, France}{}{}
+
+\section{Compétences techniques}
+\cvlistdoubleitem{Python}{C++}
+\cvlistdoubleitem{Javascript}{Angularjs}
+\cvlistdoubleitem{PyTorch}{ROS}
+\cvlistdoubleitem{Linux}{OpenCV}
+
+\section{Langages}
+\cvitemwithcomment{\textbf{Français}}{Langue maternelle}{Né à Strasbourg}
+\cvitemwithcomment{\textbf{Anglais}}{Courant}{Vécu en Angleterre et Australie}
+\cvitemwithcomment{\textbf{Allemand}}{B2}{Conversation quotidienne}
+
+\vspace{1pt}
+
+%% \section{Extracurricular Activities}
+%% \cvdoubleitem{\textbf{Juggling}}{Coordination}{\textbf{Snowboard}}{Creative risk-taking}
+%% \cvdoubleitem{\textbf{WWOOFing}}{Travel and discover new cultures}{\textbf{Ukulele}}{Easy access to the music world}
+%% \cvitem{\textbf{Rollerskating}}{Founding member of the Association Des Sports Extr\^emes de Vendenheim (ASEV)}
+%% \cvitem{\textbf{Volunteering}}{Volunteer at the RACV Great Victorian Bike Ride 2013, Australia}
+%% \cvitem{\textbf{OpenScience}}{
+%%   \begin{itemize}
+%%   \item Presented Spiking Neural Networks at Karlsruhe AI Meetup Group 2017
+%%   \item Presented Neurorobotics at Pint of Science 2018, Strasbourg
+%%   \item Finalist of Prologin 2011, French national computer science competition
+%%   \end{itemize}
+%% }
+
+% \section{Extra 1}
+%% \cvlistitem{Item 1}
+%% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%% \section{References}
+%% \cventry{}{Maxime Quiblier}{max@skimlab.com}{}{}{Trainee's supervisor, CEO at Skimlab.}
+%% \cventry{}{Jérôme Grosjean}{grosjean@unistra.fr}{}{}{Trainee's supervisor, lecturer and researcher at the iCube laboratory.}
+%% \cventry{}{Basile Sauvage}{sauvage@unistra.fr}{}{}{Lecturer and researcher at the iCube laborary.}
+\vfill{}
+%% \vspace{4pt}
+
+% Publications from a BibTeX file without multibib
+%% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+\renewcommand{\refname}{First-authored Publications}
+\nocite{*}
+\printbibliography
+%% \bibliographystyle{plain}
+%% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%% \section{Publications}
+%% \nocitebook{book1,book2}
+%% \bibliographystylebook{plain}
+%% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%% \nocitemisc{misc1,misc2,misc3}
+%% \bibliographystylemisc{plain}
+%% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+% -----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+
+%\makeletterclosing
+
+% \clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
